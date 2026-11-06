@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths xmlns:android="http://schemas.android.com/apk/res/android">
+    <files-path name="photo_files" path="photos/" />
+    <files-path name="postcard_files" path="postcards/" />
+    <files-path name="survey_files" path="surveys/" />
+    <cache-path name="share_cache" path="." />
+</paths>

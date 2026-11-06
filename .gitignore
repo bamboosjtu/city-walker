@@ -1,0 +1,12 @@
+# Android and Gradle generated files
+.gradle/
+**/build/
+local.properties
+.env
+*.iml
+.idea/
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
+temp/

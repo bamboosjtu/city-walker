@@ -1,0 +1,91 @@
+{
+  "city": {
+    "id": "changsha",
+    "name": "长沙",
+    "subtitle": "湘江两岸，十处城市副本",
+    "latitude": 28.2282,
+    "longitude": 112.9388,
+    "zoom": 12.4,
+    "coverImage": "file:///android_asset/content/images/changsha_city_cover.png",
+    "dungeonIds": ["yuelu-mountain", "orange-island", "huangxing-pedestrian-street", "hunan-botanical-garden", "hunan-museum", "yanghu-wetland", "tianxin-pavilion", "changsha-library", "kaifu-temple", "desiqin-plaza"]
+  },
+  "dungeons": [
+    {
+      "id": "yuelu-mountain", "cityId": "changsha", "name": "岳麓山", "subtitle": "一座山，读懂一座城", "description": "沿着山路走进千年文脉，在东方红广场留下你与长沙的第一张合影。", "category": "山野", "difficulty": "轻徒步", "coverImage": "file:///android_asset/content/images/yuelu_mountain_cover.png", "mapPosition": {"x": 19, "y": 37},
+      "checkpoint": {"id": "yuelu-east-square", "name": "东方红广场", "latitude": 28.1844, "longitude": 112.9395, "radiusMeters": 120, "mainTaskTitle": "在东方红广场，拍下山城的开场", "mainTaskDescription": "进入 120m 打卡范围后，用 App 拍摄一张现场照片。"},
+      "viewpoints": [
+        {"id": "yuelu-aiwan-pavilion", "dungeonId": "yuelu-mountain", "name": "爱晚亭红墙", "subtitle": "把秋色框进一角飞檐", "hint": "沿山路向南，红墙和飞檐会在树影间出现。", "referenceImages": ["file:///android_asset/content/images/yuelu_aiwan_pavilion.png"], "latitude": 28.1812, "longitude": 112.9421, "source": "official", "status": "active", "recommendedOrientation": "横构图 · 留出前景树影", "matchThreshold": 55, "badgeId": "badge-yuelu-photo"},
+        {"id": "yuelu-cloud-view", "dungeonId": "yuelu-mountain", "name": "云麓宫远眺", "subtitle": "让湘江成为画面的留白", "hint": "登高后寻找城市天际线与江面同时出现的视角。", "referenceImages": ["file:///android_asset/content/images/yuelu_cloud_view.png"], "latitude": 28.1859, "longitude": 112.9352, "source": "official", "status": "active", "recommendedOrientation": "横构图 · 低机位更有层次", "matchThreshold": 55, "badgeId": "badge-yuelu-cloud"}
+      ],
+      "badges": [{"id": "badge-yuelu-main", "name": "山门初见", "description": "完成岳麓山主线", "icon": "✦", "type": "MAIN", "condition": "main_completed"}, {"id": "badge-yuelu-photo", "name": "红墙取景师", "description": "经典机位综合分达到 80", "icon": "◎", "type": "PHOTO", "condition": "viewpoint_score_80"}, {"id": "badge-yuelu-explore", "name": "岳麓漫游者", "description": "岳麓山探索度达到 100%", "icon": "◒", "type": "EXPLORE", "condition": "exploration_100"}],
+      "postcard": {"title": "岳麓山见", "subtitle": "一座山，读懂一座城", "locationText": "长沙 · 岳麓山", "templateId": "warm-dawn"}, "creatorType": "official", "status": "active"
+    },
+    {
+      "id": "orange-island", "cityId": "changsha", "name": "橘子洲", "subtitle": "江风把青春吹成一首诗", "description": "沿着洲头走到湘江中央，在青年毛泽东艺术雕塑前，收集属于你的长沙明信片。", "category": "江岸", "difficulty": "平缓步行", "coverImage": "file:///android_asset/content/images/orange_island_cover.png", "mapPosition": {"x": 46, "y": 38},
+      "checkpoint": {"id": "orange-young-sculpture", "name": "青年毛泽东艺术雕塑", "latitude": 28.1812, "longitude": 112.9601, "radiusMeters": 150, "mainTaskTitle": "在洲头，和湘江同框", "mainTaskDescription": "进入雕塑附近 150m 范围后，用 App 拍摄一张现场照片。"},
+      "viewpoints": [
+        {"id": "orange-river-line", "dungeonId": "orange-island", "name": "湘江橘洲线", "subtitle": "把江面拍成一条发光的线", "hint": "从洲头回望两岸，让江面横向穿过画面中段。", "referenceImages": ["file:///android_asset/content/images/orange_river_line.png"], "latitude": 28.1802, "longitude": 112.9589, "source": "official", "status": "active", "recommendedOrientation": "横构图 · 对齐江岸水平线", "matchThreshold": 55, "badgeId": "badge-orange-river"},
+        {"id": "orange-reed-shadow", "dungeonId": "orange-island", "name": "洲上芦苇影", "subtitle": "风经过的时候，画面就动了", "hint": "沿江岸寻找成片芦苇，用近处枝叶做天然前景。", "referenceImages": ["file:///android_asset/content/images/orange_reed_shadow.png"], "latitude": 28.1838, "longitude": 112.9638, "source": "official", "status": "active", "recommendedOrientation": "竖构图 · 保留风吹的方向", "matchThreshold": 55, "badgeId": "badge-orange-reed"}
+      ],
+      "badges": [{"id": "badge-orange-main", "name": "洲头留影", "description": "完成橘子洲主线", "icon": "✦", "type": "MAIN", "condition": "main_completed"}, {"id": "badge-orange-photo", "name": "江风摄影师", "description": "经典机位综合分达到 80", "icon": "◎", "type": "PHOTO", "condition": "viewpoint_score_80"}, {"id": "badge-orange-explore", "name": "橘洲漫游者", "description": "橘子洲探索度达到 100%", "icon": "◒", "type": "EXPLORE", "condition": "exploration_100"}],
+      "postcard": {"title": "橘子洲见", "subtitle": "江风把青春吹成一首诗", "locationText": "长沙 · 橘子洲", "templateId": "river-blue"}, "creatorType": "official", "status": "active"
+    },
+    {
+      "id": "huangxing-pedestrian-street", "cityId": "changsha", "name": "黄兴路步行街", "subtitle": "霓虹亮起，烟火正浓", "description": "在最热闹的街区里寻找一帧长沙夜色，让人群和招牌成为你的城市背景。", "category": "街巷", "difficulty": "城市漫步", "coverImage": "file:///android_asset/content/images/huangxing_street_cover.png", "mapPosition": {"x": 63, "y": 45},
+      "checkpoint": {"id": "huangxing-central-plaza", "name": "黄兴铜像广场", "latitude": 28.1939, "longitude": 112.974, "radiusMeters": 80, "mainTaskTitle": "在人潮中央，留下烟火一帧", "mainTaskDescription": "进入黄兴铜像广场 80m 范围后，用 App 拍摄一张现场照片。"},
+      "viewpoints": [{"id": "huangxing-neon", "dungeonId": "huangxing-pedestrian-street", "name": "坡子街霓虹", "subtitle": "把热闹装进一格画面", "hint": "夜幕降临后，站在街口找一块明暗交错的招牌。", "referenceImages": ["file:///android_asset/content/images/huangxing_neon.png"], "latitude": 28.1927, "longitude": 112.9733, "source": "official", "status": "active", "recommendedOrientation": "竖构图 · 对焦最亮招牌", "matchThreshold": 55, "badgeId": "badge-huangxing-neon"}],
+      "badges": [{"id": "badge-huangxing-main", "name": "烟火入镜", "description": "完成黄兴路步行街主线", "icon": "✦", "type": "MAIN", "condition": "main_completed"}, {"id": "badge-huangxing-photo", "name": "霓虹捕手", "description": "经典机位综合分达到 80", "icon": "◎", "type": "PHOTO", "condition": "viewpoint_score_80"}, {"id": "badge-huangxing-explore", "name": "街巷漫游者", "description": "黄兴路步行街探索度达到 100%", "icon": "◒", "type": "EXPLORE", "condition": "exploration_100"}],
+      "postcard": {"title": "黄兴路见", "subtitle": "霓虹亮起，烟火正浓", "locationText": "长沙 · 黄兴路步行街", "templateId": "night-neon"}, "creatorType": "official", "status": "active"
+    },
+    {
+      "id": "hunan-botanical-garden", "cityId": "changsha", "name": "湖南省植物园", "subtitle": "把季节带回家", "description": "在花影、温室和林荫之间放慢脚步，寻找一张只属于今天的植物园照片。", "category": "自然", "difficulty": "舒缓步行", "coverImage": "file:///android_asset/content/images/botanical_garden_cover.png", "mapPosition": {"x": 74, "y": 74},
+      "checkpoint": {"id": "botanical-south-gate", "name": "植物园南门", "latitude": 28.0955, "longitude": 113.0177, "radiusMeters": 100, "mainTaskTitle": "在一片绿色里，按下快门", "mainTaskDescription": "进入植物园南门 100m 范围后，用 App 拍摄一张现场照片。"},
+      "viewpoints": [{"id": "botanical-greenhouse", "dungeonId": "hunan-botanical-garden", "name": "热带温室光影", "subtitle": "让叶脉接住一束光", "hint": "走进温室后抬头，寻找叶片与玻璃顶的交界。", "referenceImages": ["file:///android_asset/content/images/botanical_greenhouse.png"], "latitude": 28.0972, "longitude": 113.0188, "source": "official", "status": "active", "recommendedOrientation": "竖构图 · 逆光保留叶片轮廓", "matchThreshold": 55, "badgeId": "badge-botanical-greenhouse"}, {"id": "botanical-flower-sea", "dungeonId": "hunan-botanical-garden", "name": "花海小径", "subtitle": "沿着颜色走进春天", "hint": "找一条有前后层次的小径，让花色从画面边缘延伸进来。", "referenceImages": ["file:///android_asset/content/images/botanical_flower_sea.png"], "latitude": 28.0939, "longitude": 113.021, "source": "official", "status": "active", "recommendedOrientation": "横构图 · 低机位压住天空", "matchThreshold": 55, "badgeId": "badge-botanical-flower"}],
+      "badges": [{"id": "badge-botanical-main", "name": "四季入册", "description": "完成湖南省植物园主线", "icon": "✦", "type": "MAIN", "condition": "main_completed"}, {"id": "badge-botanical-photo", "name": "花影收藏家", "description": "经典机位综合分达到 80", "icon": "◎", "type": "PHOTO", "condition": "viewpoint_score_80"}, {"id": "badge-botanical-explore", "name": "绿洲漫步者", "description": "湖南省植物园探索度达到 100%", "icon": "◒", "type": "EXPLORE", "condition": "exploration_100"}],
+      "postcard": {"title": "植物园见", "subtitle": "把季节带回家", "locationText": "长沙 · 湖南省植物园", "templateId": "garden-green"}, "creatorType": "official", "status": "active"
+    },
+    {
+      "id": "hunan-museum", "cityId": "changsha", "name": "湖南博物院", "subtitle": "穿过时间的门廊", "description": "从辛追的故事到一件件楚地文物，给城市历史留一张安静的注脚。", "category": "人文", "difficulty": "室内探索", "coverImage": "file:///android_asset/content/images/hunan_museum_cover.png", "mapPosition": {"x": 66, "y": 25},
+      "checkpoint": {"id": "hunan-museum-front", "name": "湖南博物院正门", "latitude": 28.2085, "longitude": 112.9749, "radiusMeters": 100, "mainTaskTitle": "在博物馆门前，和时间打个照面", "mainTaskDescription": "进入湖南博物院正门 100m 范围后，用 App 拍摄一张现场照片。"},
+      "viewpoints": [{"id": "museum-red-wall", "dungeonId": "hunan-museum", "name": "博物馆红墙", "subtitle": "用一面墙收束时间", "hint": "在入口外寻找建筑线条与红色墙面的简洁关系。", "referenceImages": ["file:///android_asset/content/images/museum_red_wall.png"], "latitude": 28.208, "longitude": 112.9755, "source": "official", "status": "active", "recommendedOrientation": "横构图 · 留出建筑呼吸感", "matchThreshold": 55, "badgeId": "badge-museum-wall"}],
+      "badges": [{"id": "badge-museum-main", "name": "时间来客", "description": "完成湖南博物院主线", "icon": "✦", "type": "MAIN", "condition": "main_completed"}, {"id": "badge-museum-photo", "name": "静物取景师", "description": "经典机位综合分达到 80", "icon": "◎", "type": "PHOTO", "condition": "viewpoint_score_80"}, {"id": "badge-museum-explore", "name": "博物漫游者", "description": "湖南博物院探索度达到 100%", "icon": "◒", "type": "EXPLORE", "condition": "exploration_100"}],
+      "postcard": {"title": "博物院见", "subtitle": "穿过时间的门廊", "locationText": "长沙 · 湖南博物院", "templateId": "museum-ink"}, "creatorType": "official", "status": "active"
+    },
+    {
+      "id": "yanghu-wetland", "cityId": "changsha", "name": "洋湖湿地", "subtitle": "城市边缘的呼吸感", "description": "在水岸和芦苇之间，找到一段不着急的城市时间。", "category": "自然", "difficulty": "平缓步行", "coverImage": "file:///android_asset/content/images/yanghu_wetland_cover.png", "mapPosition": {"x": 35, "y": 73},
+      "checkpoint": {"id": "yanghu-east-gate", "name": "洋湖湿地东门", "latitude": 28.1086, "longitude": 112.9285, "radiusMeters": 120, "mainTaskTitle": "在水岸边，拍一口城市的呼吸", "mainTaskDescription": "进入洋湖湿地东门 120m 范围后，用 App 拍摄一张现场照片。"},
+      "viewpoints": [{"id": "yanghu-boardwalk", "dungeonId": "yanghu-wetland", "name": "湿地木栈道", "subtitle": "让线条带你走进风里", "hint": "站到木栈道一侧，寻找栏杆向远处收束的透视线。", "referenceImages": ["file:///android_asset/content/images/yanghu_boardwalk.png"], "latitude": 28.108, "longitude": 112.9302, "source": "official", "status": "active", "recommendedOrientation": "竖构图 · 把消失点放在三分之一处", "matchThreshold": 55, "badgeId": "badge-yanghu-boardwalk"}, {"id": "yanghu-sunset", "dungeonId": "yanghu-wetland", "name": "水杉落日", "subtitle": "一天的最后一束橙光", "hint": "傍晚沿湖找一排水杉，让倒影和树梢同时入镜。", "referenceImages": ["file:///android_asset/content/images/yanghu_sunset.png"], "latitude": 28.1112, "longitude": 112.9272, "source": "official", "status": "active", "recommendedOrientation": "横构图 · 暗部保留水面细节", "matchThreshold": 55, "badgeId": "badge-yanghu-sunset"}],
+      "badges": [{"id": "badge-yanghu-main", "name": "湿地呼吸", "description": "完成洋湖湿地主线", "icon": "✦", "type": "MAIN", "condition": "main_completed"}, {"id": "badge-yanghu-photo", "name": "水岸观察员", "description": "经典机位综合分达到 80", "icon": "◎", "type": "PHOTO", "condition": "viewpoint_score_80"}, {"id": "badge-yanghu-explore", "name": "洋湖漫游者", "description": "洋湖湿地探索度达到 100%", "icon": "◒", "type": "EXPLORE", "condition": "exploration_100"}],
+      "postcard": {"title": "洋湖见", "subtitle": "城市边缘的呼吸感", "locationText": "长沙 · 洋湖湿地", "templateId": "wetland-sunset"}, "creatorType": "official", "status": "active"
+    },
+    {
+      "id": "tianxin-pavilion", "cityId": "changsha", "name": "天心阁", "subtitle": "城南旧事，登阁再看", "description": "登上古阁，寻找城墙、树影与高楼交错的长沙旧新切面。", "category": "古迹", "difficulty": "城市漫步", "coverImage": "file:///android_asset/content/images/tianxin_pavilion_cover.png", "mapPosition": {"x": 58, "y": 52},
+      "checkpoint": {"id": "tianxin-main-gate", "name": "天心阁公园入口", "latitude": 28.1877, "longitude": 112.9748, "radiusMeters": 80, "mainTaskTitle": "登一座阁，看见新旧长沙", "mainTaskDescription": "进入天心阁公园入口 80m 范围后，用 App 拍摄一张现场照片。"},
+      "viewpoints": [{"id": "tianxin-city-wall", "dungeonId": "tianxin-pavilion", "name": "古城墙转角", "subtitle": "砖石把时间压成了线", "hint": "沿城墙慢走，找到墙体线条与现代楼宇交会的转角。", "referenceImages": ["file:///android_asset/content/images/tianxin_city_wall.png"], "latitude": 28.1871, "longitude": 112.976, "source": "official", "status": "active", "recommendedOrientation": "横构图 · 用墙体做前景边框", "matchThreshold": 55, "badgeId": "badge-tianxin-wall"}],
+      "badges": [{"id": "badge-tianxin-main", "name": "城南登阁", "description": "完成天心阁主线", "icon": "✦", "type": "MAIN", "condition": "main_completed"}, {"id": "badge-tianxin-photo", "name": "古今取景师", "description": "经典机位综合分达到 80", "icon": "◎", "type": "PHOTO", "condition": "viewpoint_score_80"}, {"id": "badge-tianxin-explore", "name": "城南漫游者", "description": "天心阁探索度达到 100%", "icon": "◒", "type": "EXPLORE", "condition": "exploration_100"}],
+      "postcard": {"title": "天心阁见", "subtitle": "城南旧事，登阁再看", "locationText": "长沙 · 天心阁", "templateId": "old-town"}, "creatorType": "official", "status": "active"
+    },
+    {
+      "id": "changsha-library", "cityId": "changsha", "name": "长沙图书馆", "subtitle": "给一座城留一盏灯", "description": "在安静的书页与城市灯火之间，寻找一处属于阅读者的建筑视角。", "category": "公共空间", "difficulty": "轻松到达", "coverImage": "file:///android_asset/content/images/changsha_library_cover.png", "mapPosition": {"x": 72, "y": 28},
+      "checkpoint": {"id": "changsha-library-plaza", "name": "长沙图书馆前坪", "latitude": 28.2119, "longitude": 112.9823, "radiusMeters": 90, "mainTaskTitle": "在书页之外，拍下这座公共客厅", "mainTaskDescription": "进入图书馆前坪 90m 范围后，用 App 拍摄一张现场照片。"},
+      "viewpoints": [{"id": "library-staircase", "dungeonId": "changsha-library", "name": "台阶与天窗", "subtitle": "让建筑线条保持安静", "hint": "在入口台阶下方抬头，把天窗和重复的线条放进画面。", "referenceImages": ["file:///android_asset/content/images/library_staircase.png"], "latitude": 28.2122, "longitude": 112.9817, "source": "official", "status": "active", "recommendedOrientation": "竖构图 · 保持垂直线平行", "matchThreshold": 55, "badgeId": "badge-library-staircase"}],
+      "badges": [{"id": "badge-library-main", "name": "城市书签", "description": "完成长沙图书馆主线", "icon": "✦", "type": "MAIN", "condition": "main_completed"}, {"id": "badge-library-photo", "name": "光线阅读者", "description": "经典机位综合分达到 80", "icon": "◎", "type": "PHOTO", "condition": "viewpoint_score_80"}, {"id": "badge-library-explore", "name": "书城漫游者", "description": "长沙图书馆探索度达到 100%", "icon": "◒", "type": "EXPLORE", "condition": "exploration_100"}],
+      "postcard": {"title": "图书馆见", "subtitle": "给一座城留一盏灯", "locationText": "长沙 · 长沙图书馆", "templateId": "library-light"}, "creatorType": "official", "status": "active"
+    },
+    {
+      "id": "kaifu-temple", "cityId": "changsha", "name": "开福寺", "subtitle": "香火之外，听见一城钟声", "description": "在古寺院墙与城市街巷之间，拍一张克制、安静的长沙。", "category": "人文", "difficulty": "城市漫步", "coverImage": "file:///android_asset/content/images/kaifu_temple_cover.png", "mapPosition": {"x": 68, "y": 17},
+      "checkpoint": {"id": "kaifu-temple-front", "name": "开福寺山门外", "latitude": 28.203, "longitude": 112.977, "radiusMeters": 80, "mainTaskTitle": "在山门外，给城市留一秒安静", "mainTaskDescription": "进入开福寺山门外 80m 范围后，用 App 拍摄一张现场照片。"},
+      "viewpoints": [{"id": "kaifu-golden-roof", "dungeonId": "kaifu-temple", "name": "山门檐角", "subtitle": "一抹金色，压住午后的光", "hint": "在不打扰参拜的前提下，寻找屋檐与树影的重叠。", "referenceImages": ["file:///android_asset/content/images/kaifu_golden_roof.png"], "latitude": 28.2034, "longitude": 112.9778, "source": "official", "status": "active", "recommendedOrientation": "横构图 · 留出檐角方向", "matchThreshold": 55, "badgeId": "badge-kaifu-roof"}],
+      "badges": [{"id": "badge-kaifu-main", "name": "山门听钟", "description": "完成开福寺主线", "icon": "✦", "type": "MAIN", "condition": "main_completed"}, {"id": "badge-kaifu-photo", "name": "檐角观察员", "description": "经典机位综合分达到 80", "icon": "◎", "type": "PHOTO", "condition": "viewpoint_score_80"}, {"id": "badge-kaifu-explore", "name": "古寺漫游者", "description": "开福寺探索度达到 100%", "icon": "◒", "type": "EXPLORE", "condition": "exploration_100"}],
+      "postcard": {"title": "开福寺见", "subtitle": "香火之外，听见一城钟声", "locationText": "长沙 · 开福寺", "templateId": "temple-gold"}, "creatorType": "official", "status": "active"
+    },
+    {
+      "id": "desiqin-plaza", "cityId": "changsha", "name": "德思勤城市广场", "subtitle": "把未来拍在今天", "description": "从城市广场的开阔线条，到夜间亮起的公共空间，感受长沙向南生长的速度。", "category": "城市", "difficulty": "轻松到达", "coverImage": "file:///android_asset/content/images/desiqin_plaza_cover.png", "mapPosition": {"x": 81, "y": 79},
+      "checkpoint": {"id": "desiqin-central-atrium", "name": "德思勤中央大街", "latitude": 28.1152066, "longitude": 113.00664575, "radiusMeters": 200, "mainTaskTitle": "在城市广场，拍下向南生长", "mainTaskDescription": "进入德思勤中央大街 200m 范围后，用 App 拍摄一张现场照片。"},
+      "viewpoints": [{"id": "desiqin-geometry", "dungeonId": "desiqin-plaza", "name": "城市几何体", "subtitle": "在玻璃与天空之间找秩序", "hint": "抬头寻找建筑边缘的交点，让几何线条充满画面。", "referenceImages": ["file:///android_asset/content/images/desiqin_geometry.png"], "latitude": 28.115199, "longitude": 113.00666255, "source": "official", "status": "active", "recommendedOrientation": "竖构图 · 保留玻璃反射层次", "matchThreshold": 55, "badgeId": "badge-desiqin-geometry"}],
+      "badges": [{"id": "badge-desiqin-main", "name": "向南出发", "description": "完成德思勤城市广场主线", "icon": "✦", "type": "MAIN", "condition": "main_completed"}, {"id": "badge-desiqin-photo", "name": "城市几何师", "description": "经典机位综合分达到 80", "icon": "◎", "type": "PHOTO", "condition": "viewpoint_score_80"}, {"id": "badge-desiqin-explore", "name": "未来漫游者", "description": "德思勤城市广场探索度达到 100%", "icon": "◒", "type": "EXPLORE", "condition": "exploration_100"}],
+      "postcard": {"title": "德思勤见", "subtitle": "把未来拍在今天", "locationText": "长沙 · 德思勤城市广场", "templateId": "city-future"}, "creatorType": "official", "status": "active"
+    }
+  ],
+  "cityBadges": [{"id": "badge-changsha-traveler", "name": "长沙旅行家", "description": "完成长沙全部 10 个副本主线", "icon": "✹", "type": "CITY", "condition": "city_100"}]
+}
